@@ -39,7 +39,10 @@ dependencies:
   firebase_core: 
   firebase_auth:
   google_fonts:
-  cloud_firestore:   
+  cloud_firestore:
+  intl:
+  fluttertoast:
+  random_string:    
 
 dev_dependencies:
   flutter_test:

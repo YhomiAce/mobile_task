@@ -1,8 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:refresh_app/screens/splash_screen.dart';
 
+import './screens/description.dart';
+import './screens/splash_screen.dart';
 import './auth/auth_screen.dart';
 import './screens/home.dart';
 
@@ -35,6 +36,9 @@ class MyApp extends StatelessWidget {
           return AuthScreen();
         },
       ),
+      routes: {
+        DescriptionScreen.routeName: (context) => DescriptionScreen(),
+      },
     );
   }
 }
