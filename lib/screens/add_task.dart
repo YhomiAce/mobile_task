@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_final_fields
 
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +35,7 @@ class _AddTaskState extends State<AddTask> {
       'createdAt': time
     });
     Fluttertoast.showToast(msg: 'Task added');
+    Navigator.pop(context);
   }
 
   @override
